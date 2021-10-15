@@ -159,4 +159,5 @@ figure{
 /* evolution */
 .evolutionWrapper{
     display: flex;
+    align-items: center;
 }

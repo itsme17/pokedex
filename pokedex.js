@@ -45,13 +45,24 @@ await getEvolution()
 async  function getEvolution(){
     var input = document.getElementById("searchInput").value;
     let evolutionTwo = document.getElementById("evolution2")
+    let evolutionThree = document.getElementById("evolution3")
     let source = await fetch("https://pokeapi.co/api/v2/pokemon-species/"+input);
     var eData = await source.json();
     console.log(eData)
     var ename = eData.evolves_from_species.name
-    evolutionTwo.innerHTML = ename
+    let api = await fetch("https://pokeapi.co/api/v2/pokemon/"+ename);
+    var data = await api.json();
+    evolutionTwo.setAttribute("src",data.sprites.front_default)
 
-    console.log(ename)
+
+    let api2 = await fetch("https://pokeapi.co/api/v2/pokemon/"+input);
+    var data2 = await api2.json();
+    evolutionThree.setAttribute("src",data2.sprites.front_default)
+
+
+}
+async function getEvolutionImage(){
+
 }
 let button = document.getElementById('searchBtn');
 button.addEventListener('click', getPokemon)
