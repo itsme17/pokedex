@@ -48,7 +48,7 @@ async  function getEvolution(){
     let evolutionThree = document.getElementById("evolution3")
     let source = await fetch("https://pokeapi.co/api/v2/pokemon-species/"+input);
     var eData = await source.json();
-    console.log(eData)
+    
     var ename = eData.evolves_from_species.name
     let api = await fetch("https://pokeapi.co/api/v2/pokemon/"+ename);
     var data = await api.json();
