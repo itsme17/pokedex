@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@font-face {
+    src: url("fonts/Pokemon Hollow.ttf");
+    font-family: pokemon;
+}
+@font-face {
+    src: url("fonts/Pokemon Solid.ttf");
+    font-family: pokemonBold;
+}
+body{
+background-color: #fbeb45;
+}
+figure{
+    width: 200px;
+    height: 200px;
+}
+#header{
+    font-family: pokemon;
+    color: #01245E;
+    text-align: center;
+    font-size: 80px;
+
+}
+/* pokemonName header*/
+#pokemonId{
+    text-align: left;
+    margin-right: 10px;
+}
+#pokemonName{
+
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    color: #000000;
+    background-color: #f7f7f7;
+    letter-spacing: 2px;
+    padding: 10px 100px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+/* moves header */
+#moves{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: #000000;
+    background-color: #f7f7f7;
+    letter-spacing: 2px;
+    padding: 10px 130px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+/* evolution header */
+#evolution{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: #000000;
+    background-color: #f7f7f7;
+    letter-spacing: 2px;
+    padding: 10px 100px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+/* main container */
+.containerWrapper{
+    background-color: #ff7066;
+    display: flex;
+    width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    border: 5px solid black;
+    margin: 20px 30px;
+    border-radius: 15px;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    border: 5px solid black;
+    margin: 20px 30px;
+    border-radius: 15px;
+}
+/* input and search button */
+.inputContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#searchInput{
+    padding: 15px 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+#searchBtn{
+    margin-left: 20px;
+    padding: 13px 24px;
+    font-family: 'Bangers', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #f7f7f7;
+    border: 1px solid #000000;
+}
+/* moves */
+.movesBoxWrapper{
+    display: flex;
+    flex-direction: row;
+}
+.boxFor2Moves{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.secondBoxFor2Moves{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.moveStyle{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+/* evolution */
+.evolutionWrapper{
+    display: flex;
+}

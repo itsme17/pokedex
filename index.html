@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="header">Pokedex</h1>
+<div class="containerWrapper">
+    <div class="box1">
+        <h1 id="pokemonName">poke-Id: <span id="pokemonId"></span> name: <span id="name"></span></h1>
+        <figure>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png" height="200px" width="200px" alt="pokemon">
+        </figure>
+        <div class="inputContainer">
+            <div class="inputBox">
+                <input type="text" id="searchInput" placeholder=" Pokemon name Or Id ">
+            </div>
+            <div class="searchBox">
+                <button type="button" id="searchBtn"> SEARCH </button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="box2">
+        <h1 id="moves">Moves</h1>
+        <div class="movesBoxWrapper">
+            <div class="boxFor2Moves">
+                <div id="move1">
+                    <h1 class="moveStyle " id="moveText1"></h1>
+                </div>
+                <div id="move2">
+                    <h1 class="moveStyle" id="moveText2"></h1>
+                </div>
+            </div>
+            <div class="secondBoxFor2Moves">
+                <div id="move3">
+                    <h1 class="moveStyle" id="moveText3"></h1>
+                </div>
+                <div id="move4">
+                    <h1 class="moveStyle" id="moveText4" ></h1>
+                </div>
+            </div>
+        </div>
+        <h1 id="evolution">Evolutions</h1>
+        <div class="evolutionWrapper">
+<!--            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png" height="100px" width="100px" alt="pokemon">-->
+<!--            <img id="evolution2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png" height="100px" width="100px" alt="pokemon">-->
+<!--            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png" height="100px" width="100px" alt="pokemon">-->
+            <h1></h1>
+            <h1 id="evolution2"></h1>
+            <h1></h1>
+        </div>
+    </div>
+</div>
+<script src="pokedex.js"></script>
+</body>
+</html>
